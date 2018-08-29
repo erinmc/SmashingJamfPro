@@ -12,7 +12,7 @@ url = config['url']
 smartgroup1 = config['group1']
 # Schedule job to do
 
-# Get JSON from specific Advanced Search 
+# Get JSON from specific Smart Computer Gorup
 
 uri = URI.parse("#{url}/JSSResource/computergroups/id/#{smartgroup1}")
 request = Net::HTTP::Get.new(uri)
