@@ -24,7 +24,7 @@ points = []
 end
 last_x = points.last[:x]
 
-# Get JSON from specific Advanced Search 
+# Get JSON from specific Smart Computer Group
 
 uri = URI.parse("#{url}/JSSResource/computergroups/id/#{graphgroup}")
 request = Net::HTTP::Get.new(uri)
