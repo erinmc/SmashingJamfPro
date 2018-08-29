@@ -1,0 +1,17 @@
+user: readusername
+password: readpassword
+url: https://yourjamfpro.url.com
+
+# Used in job script examples
+# Smart group for all managed computers
+allcomps:
+# Smart group for meter percentage
+percentgroup1:  
+# Smart mobile device group
+msg1:
+# Smart computer group
+cgroup1:
+# Smart group for graph 
+ggroup1:
+# Advanced Search for computers
+adv1:
