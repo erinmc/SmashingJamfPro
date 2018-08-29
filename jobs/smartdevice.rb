@@ -13,7 +13,7 @@ msmartgroup = config['msg1']
 
 # Schedule job to do
 
-# Get JSON from specific Advanced Search 
+# Get JSON from specific Mobile Device Smart Group
 
 uri = URI.parse("#{url}/JSSResource/mobiledevicegroups/id/#{msmartgroup}")
 request = Net::HTTP::Get.new(uri)
@@ -31,7 +31,7 @@ end
 # Check for HTTP Status OK.  
 
 if (response.code == "200") then
-# If OK, get count of computers and name of smart group
+# If OK, get count of devices and name of smart group
 
 	devicecount = JSON.parse(response.body)['mobile_device_group']['mobile_devices'].size
 	searchname = JSON.parse(response.body)['mobile_device_group']['name']
