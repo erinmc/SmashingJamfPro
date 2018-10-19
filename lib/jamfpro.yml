@@ -15,3 +15,5 @@ cgroup1:
 ggroup1:
 # Advanced Search for computers
 adv1:
+# Advanced search that shows models for a list
+listadv: 
