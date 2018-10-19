@@ -36,7 +36,7 @@ if (response.code == "200") then
 	devicecount = JSON.parse(response.body)['mobile_device_group']['mobile_devices'].size
 	searchname = JSON.parse(response.body)['mobile_device_group']['name']
 	send_event(
-		'nochkin', 
+		'smartdevice', 
 		{ 
 			value: devicecount,
 			title: searchname
