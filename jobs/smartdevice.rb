@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 
+# Job to populate a Number (or similar type) widget with the count of a Smart Device Group
 
 #Add required libraries
 
@@ -44,9 +45,9 @@ if (response.code == "200") then
 	else
 	
 # If not OK, display status code in Smashing Output
-	
-	print "#{searchname} - Error: HTTP Status code #{response.code}"
+	puts "Smart Device Group ID: #{msmartgroup}"
+	puts "#{searchname} - Error: HTTP Status code #{response.code}"
 	end
 
 end
-# response.body
+
