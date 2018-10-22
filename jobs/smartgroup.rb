@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 
+# Job to populate a Number (or similar type) widget with the count of a Smart Computer Group
 
 #Add required libraries
 
@@ -44,6 +45,7 @@ if (response.code == "200") then
 	
 # If not OK, display status code in Smashing Output
 	
+	print "Smart Compuer Group ID: #{smartgroup1}"
 	print "#{searchname} - Error: HTTP Status code #{response.code}"
 	end
 
