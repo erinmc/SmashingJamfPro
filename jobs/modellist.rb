@@ -62,7 +62,7 @@ if (response.code == "200") then
 	send_event('modelcount', { items: model_sorted_count.values, 
 								title: searchname})
 	else 
-	#Output STOUT error messages
+	# Display error messages in Smashing Output
 	puts "Advanced Search ID: #{listsearch}"
 	puts "Error: HTTP Status code #{response.code} for model list"
 	end
