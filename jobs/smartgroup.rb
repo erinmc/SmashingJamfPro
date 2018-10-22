@@ -9,7 +9,7 @@ require 'json'
 
 config = YAML.load_file("lib/jamfpro.yml")
 url = config['url']
-smartgroup1 = config['group1']
+smartgroup1 = config['cgroup1']
 # Schedule job to do
 
 # Get JSON from specific Smart Computer Gorup
