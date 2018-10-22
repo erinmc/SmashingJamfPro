@@ -5,7 +5,8 @@ password: readpassword
 # Jamf Pro URL.  Include port if needed, do not include trailing slash
 url: https://yourjamfpro.url.com
 
-# Used in job script examples
+# Populate below with either Smart Group or Advanced Search ID numbers
+# Widgets used: Hotness, Meter, Graph, List
 # Smart group for all managed computers, updates smartmeter.rb, populates meter widget
 allcomps:
 # Smart group for meter percentage, updates smartmeter.rb, populates meter widget
