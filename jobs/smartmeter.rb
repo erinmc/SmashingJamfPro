@@ -1,5 +1,7 @@
 #!/usr/bin/ruby
 
+# Job to populate a Meter widget with the percentage of devices in a Smart Computer Group
+# Percentage calculated against the total number of devices in 'All Managed Computers'
 
 #Add required libraries
 
@@ -69,6 +71,7 @@ devicecount2 = 0
 	
 # If not OK, display status code in Smashing Output
 	
+	print "All Managed Computers ID: #{allComputers} Other smart group ID: #{percent1}"
 	print "Percentage of #{searchname2} - Error: HTTP Status code #{response.code}"
 	end
 
