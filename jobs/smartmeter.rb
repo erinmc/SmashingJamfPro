@@ -76,5 +76,3 @@ devicecount2 = 0
 	end
 
 end
-
-# response.body
