@@ -1,10 +1,15 @@
 #!/usr/bin/ruby
 
+# Job to populate a List widget with the results of an Advanced Computer Search
+# Required: Advanced search must be set to display 'Model' as part of the results
+
 #Add required libraries
 
 require 'net/http'
 require 'uri'
 require 'json'
+
+# Read YAML file for Jamf Pro data
 
 config = YAML.load_file("lib/jamfpro.yml")
 url = config['url']
@@ -38,17 +43,15 @@ if (response.code == "200") then
 	searchname = JSON.parse(response.body)['advanced_computer_search']['name']
 	JSON.parse(response.body)['advanced_computer_search']['computers'].each do |models|
 	
-
-
-#puts "#{searchname}"
-	# Increment the counter for this particular OS type
+	# Increment the counter for this particular Model type
 		model_count[models["Model"]] += 1
 
 	end
 
-	# Sort the vm array by value from most to least and print each line:
+	# Sort the array by value from most to least and print each line:
 
 	model_count.keys.sort_by { |key| model_count[key] }.reverse.each do |key|
+		
 #Uncomment the next line to run debug and show the output that will be sent to Smashing
 		#print key + " = " + model_count[key].to_s + "\n"
 		model_sorted_count[key] = { label: key,
@@ -59,6 +62,8 @@ if (response.code == "200") then
 	send_event('modelcount', { items: model_sorted_count.values, 
 								title: searchname})
 	else 
+	#Output STOUT error messages
+	puts "Advanced Search ID: #{listsearch}"
 	puts "Error: HTTP Status code #{response.code} for model list"
 	end
 end
