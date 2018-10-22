@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 
+# Job to populate a Graph widget with the cout of devices in a Smart Computer Group
 
 #Add required libraries
 
@@ -15,7 +16,7 @@ graphgroup = config['ggroup1']
 # Schedule job to do
 
 # Determine points on the graph.  Below will output a 1 second interval
-# If you wish to do 1 minute data pulls, for example, change line 18 to read '(1..120).each do |i|'
+# If you wish to do 1 minute data pulls, for example, change line 23 to read '(1..120).each do |i|'
 # 2 X 60 seconds 
 
 points = []
@@ -60,6 +61,7 @@ if (response.code == "200") then
 	
 # If not OK, display status code in Smashing Output
 	
+	print "Smart Computer Group ID: #{graphgroup}"
 	print "#{searchname} - Error: HTTP Status code #{response.code}"
 	end
 
