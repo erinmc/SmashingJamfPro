@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 
+# Job to populate a widget with the count of devices in an Advanced Computer Search
 
 #Add required libraries
 
@@ -49,4 +50,4 @@ if (response.code == "200") then
 	end
 
 end
-# response.body
+
