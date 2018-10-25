@@ -15,8 +15,6 @@ percentgroup1:
 msg1:
 # Smart computer group, updates smartgroup.rb, populates 2nd widget in jnuc.erb
 cgroup1:
-# Smart group for graph, updates smartgroupgraph.rb, populates graph widget in jnuc.erb
-ggroup1:
 # Advanced Search for computers, updates computers.rb, populates first widget in jnuc.erb
 adv1:
 # Advanced search that shows models for a list, updates modellist.rb, populates list widget in jnuc.erb
