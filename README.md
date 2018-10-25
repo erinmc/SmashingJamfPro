@@ -1,6 +1,8 @@
 # SmashingJamfPro
 Connect Smashing to your Jamf Pro instance
 
+Copy of the Keynote used during the JNUC 2018 session: [JNUC 2018 Creating Smashing Dashboards](https://github.com/erinmc/SmashingJamfPro/blob/master/JNUC%202018%20SmashingDashboards.pdf)
+
 Contains example jobs, example dashboard, and example YAML file. 
 
 Requires the Hotness widget.  To get this run:
